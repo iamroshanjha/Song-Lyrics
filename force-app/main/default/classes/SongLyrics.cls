@@ -3,6 +3,7 @@ public class SongLyrics {
     public static String getLyrics(String artist, String title)
     {
         artist = EncodingUtil.urlEncode(artist,'UTF-8');
+        
         title = EncodingUtil.urlEncode(title,'UTF-8');
         String endpoint = 'https://api.lyrics.ovh/v1/'+artist+'/'+title;
         String responseData;
